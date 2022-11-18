@@ -4,11 +4,7 @@
 
 var Friends = {
 
-<<<<<<< HEAD
-  _data: [],
-=======
   _data: new Set,
->>>>>>> 8dc803505335c41d4b311b502c48dace1fe4a23d
 
   items: function() {
     return _.chain([...Friends._data]);
@@ -27,5 +23,5 @@ var Friends = {
       callback(true);
     }
   }
-  
+
 };

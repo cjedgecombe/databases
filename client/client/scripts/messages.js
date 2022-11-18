@@ -3,14 +3,6 @@
 // with and manipulate the data.
 
 var Messages = {
-<<<<<<< HEAD
-  // TODO: Define how you want to store your messages.
-  _data: [],
-
-  //data should be an array of message obejcts
-=======
-
->>>>>>> 8dc803505335c41d4b311b502c48dace1fe4a23d
 
   _data: {},
 
@@ -43,5 +35,5 @@ var Messages = {
     message.roomname = message.roomname || '';
     return message;
   }
-  
+
 };

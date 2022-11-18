@@ -14,23 +14,6 @@ var FormView = {
     // Stop the browser from submitting the form
     event.preventDefault();
 
-<<<<<<< HEAD
-    var currentMessage = {
-      username: App.username,
-      text: $('input:text').val(),
-      roomname: $('#rooms select').val(),
-    };
-    //push message to API
-    //console.log(currentMessage);
-    Parse.create(currentMessage);
-    //add message to current chat window
-    MessagesView.renderMessage(currentMessage);
-    // TODO: Currently, this is all handleSubmit does.
-    // Make this function actually send a message to the Parse API.
-
-
-  },
-=======
 
     var message = {
       username: App.username,
@@ -43,7 +26,6 @@ var FormView = {
       Messages.add(message, MessagesView.render);
     });
       },
->>>>>>> 8dc803505335c41d4b311b502c48dace1fe4a23d
 
   setStatus: function(active) {
     var status = active ? 'true' : null;

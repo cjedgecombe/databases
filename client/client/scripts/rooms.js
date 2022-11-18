@@ -4,30 +4,8 @@
 
 var Rooms = {
 
-<<<<<<< HEAD
-  // TODO: Define how you want to store the list of rooms
-  _data: null,
-  sortedRooms: {},
-  // TODO: Define methods which allow you to add rooms, update the list,
-  // mark a room as selected, etc.
-  sortRooms: function (data) {
-    //loop through array of message objects
-    for (message of data) {
-      var currentRoomname = message.roomname;
-      if (currentRoomname === null) {
-        continue;
-      } else if (!Rooms.sortedRooms.hasOwnProperty(currentRoomname)) {
-        Rooms.sortedRooms[currentRoomname] = [];
-        Rooms.sortedRooms[currentRoomname].push(message);
-      } else {
-        Rooms.sortedRooms[currentRoomname].push(message);
-      }
-    }
-  }
-=======
 
   _data: new Set,
->>>>>>> 8dc803505335c41d4b311b502c48dace1fe4a23d
 
   selected: 'lobby',
 
@@ -64,5 +42,5 @@ var Rooms = {
       callback(Rooms.items());
     }
   }
-  
+
 };
