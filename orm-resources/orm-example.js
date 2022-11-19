@@ -8,7 +8,7 @@ var db = new Sequelize('chatter', 'root', '');
 /* TODO this constructor takes the database name, username, then password.
  * Modify the arguments if you need to */
 
-/* first define the data structure by giving property names and datatypes
+/*  first define the data structure by giving property names and datatypes
  * See http://sequelizejs.com for other datatypes you can use besides STRING. */
 var User = db.define('User', {
   username: Sequelize.STRING
