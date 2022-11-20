@@ -9,4 +9,19 @@ var mysql = require('mysql2');
 // OR
 // user: 'root', password: 'some_password_you_created_at_install'
 
+const dbConnect = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'chat'
+});
+
+dbConnect.connect(function(err) {
+  if (err) {
+    throw err;
+  }
+  console.log('Connected!');
+});
+
+module.exports = dbConnect;
 
